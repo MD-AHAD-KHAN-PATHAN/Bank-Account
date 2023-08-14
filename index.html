@@ -1,21 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bank Account</title>
-    
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
+
 <body>
 
     <header>
-        <h1></h1>
+        <h1 class="text-5xl font-semibold text-center mt-8">Welcome To <span
+                class="text-green-500 font-bold">SWIFT</span> Bank</h1>
     </header>
     <main>
-        <section>
+        <section class=" w-1/2 m-auto mt-20">
+            <div class="bg-green-200 text-center">
+                <p class="font-bold text-white bg-green-400 text-2xl">PLEASE LOGIN</p>
+                <input id="email" class="mt-10 w-1/2 h-10 p-5 rounded-lg" type="email" placeholder="Enter Your Email">
+                <br>
+                <input id="password" class="my-8 w-1/2 h-10 p-5 rounded-lg" type="password" placeholder="Enter Your Password">
+                <br>
+                <button id="submit" class="bg-green-500 font-bold text-white px-8 py-4 rounded-full mb-10">SUBMIT</button>
+            </div>
 
         </section>
     </main>
-    
+
 </body>
+
 </html>
