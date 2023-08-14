@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="text-5xl font-semibold text-center mt-8 mb-20"><span class="text-green-500 font-bold">Ahad Khan
+            </span>Welcome To <span class="text-green-500 font-bold">SWIFT</span> Bank</h1>
+    </header>
+    <main>
+
+        <section class="grid grid-cols-3 w-2/3 m-auto text-center gap-3">
+            <div class="bg-yellow-200 p-8 font-bold text-gray-500 rounded-xl">
+                <p class="text-2xl mb-3">Deposit</p>
+                <div class="grid grid-cols-10 text-3xl">
+                    <p class="mr-2">$</p>
+                    <p id="depositId">0</p>
+                </div>
+            </div>
+
+            <div class="bg-green-300 p-8 font-bold text-gray-500 rounded-xl">
+                <p class="text-2xl mb-3">Balance</p>
+                <div class="grid grid-cols-10 text-3xl">
+                    <p class="mr-2">$</p>
+                    <p id="balanceId">0</p>
+                </div>
+            </div>
+
+            <div class="bg-red-300 p-8 font-bold text-gray-500 rounded-xl">
+                <p class="text-2xl mb-3">Withdraw</p>
+                <div class="grid grid-cols-10 text-3xl">
+                    <p class="mr-2">$</p>
+                    <p id="withdrawId">0</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-2 w-2/3 m-auto mt-16 gap-5 text-center">
+            <div class="bg-yellow-200 p-8 font-bold text-gray-500 rounded-xl">
+                <p class="text-2xl mb-3">Enter Your Deposit Value</p>
+                <div class="text-left mt-8">
+                    <input id="depositValue" class="rounded-lg p-3 mb-5" type="number" placeholder="Enter Your Amount">
+                    <br>
+                    <button id="deposite" class="bg-yellow-400 py-4 px-6 rounded-full text-white">Deposit</button>
+                </div>
+
+            </div>
+
+            <div class="bg-red-300 p-8 font-bold text-gray-500 rounded-xl">
+                <p class="text-2xl mb-3">Enter Your Withdraw Value</p>
+                <div class="text-left mt-8">
+                    <input id="withdrawValue" class="rounded-lg p-3 mb-5" type="number" placeholder="Enter Your Amount">
+                    <br>
+                    <button id="withdraw" class="bg-red-500 py-4 px-6 rounded-full text-white">Withdraw</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <script src="user.js"></script>
+</body>
+
+</html>
