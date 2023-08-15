@@ -3,16 +3,26 @@ const balanceId = document.getElementById('balanceId');
 
 const depositValue = document.getElementById('depositValue');
 
-let depositInitialValue = 0;
-let withdrawInitialValue = 0;
-let sum = 0;
-let sub = 0;
 
-document.getElementById('deposite').addEventListener('click', function(){
-    depositInitialValue = parseInt(depositValue.value);
-    depositId.innerText = parseInt(depositInitialValue);
+document.getElementById('deposite').addEventListener('click', function () {
+
+    if (depositValue.value == '') {
+        alert('Please Add Some Money');
+        depositId.innerText = 0;
+    }
+    else {
+        const depositeInitialValue = parseFloat(depositValue.value);
+
+        depositId.innerText = depositeInitialValue;
     
-    sum += depositInitialValue;
-    balanceId.innerText = sum;
-    depositValue.value = '';
+        let totalBalance = parseFloat(balanceId.innerText);
+    
+        totalBalance += parseFloat(depositeInitialValue);
+    
+        balanceId.innerText = totalBalance;
+    
+        depositValue.value = '';
+    }
+
+   
 })

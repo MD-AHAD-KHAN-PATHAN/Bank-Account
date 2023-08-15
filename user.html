@@ -11,12 +11,12 @@
 <body>
 
     <header>
-        <h1 class="text-5xl font-semibold text-center mt-8 mb-20"><span class="text-green-500 font-bold">Ahad Khan
+        <h1 class="text-5xl font-semibold text-center mt-8 mb-20 px-3"><span class="text-green-500 font-bold">"Ahad Khan"
             </span>Welcome To <span class="text-green-500 font-bold">SWIFT</span> Bank</h1>
     </header>
     <main>
 
-        <section class="grid grid-cols-3 w-2/3 m-auto text-center gap-3">
+        <section class="grid lg:grid-cols-3 grid-cols-1 w-2/3 m-auto text-center gap-3">
             <div class="bg-yellow-200 p-8 font-bold text-gray-500 rounded-xl">
                 <p class="text-2xl mb-3">Deposit</p>
                 <div class="grid grid-cols-10 text-3xl">
@@ -42,11 +42,12 @@
             </div>
         </section>
 
-        <section class="grid grid-cols-2 w-2/3 m-auto mt-16 gap-5 text-center">
+        <section class="grid lg:grid-cols-2 grid-cols-1 lg:w-2/3 w-3/4 m-auto my-12 gap-5 text-center">
             <div class="bg-yellow-200 p-8 font-bold text-gray-500 rounded-xl">
-                <p class="text-2xl mb-3">Enter Your Deposit Value</p>
+                <p class="text-2xl mb-3">Deposit Value</p>
                 <div class="text-left mt-8">
-                    <input id="depositValue" class="rounded-lg p-3 mb-5" type="number" placeholder="Enter Your Amount">
+                    <input id="depositValue" class="rounded-lg p-3 mb-5 lg:w-2/3 w-full" type="number"
+                        placeholder="Enter Your Amount">
                     <br>
                     <button id="deposite" class="bg-yellow-400 py-4 px-6 rounded-full text-white">Deposit</button>
                 </div>
@@ -54,9 +55,10 @@
             </div>
 
             <div class="bg-red-300 p-8 font-bold text-gray-500 rounded-xl">
-                <p class="text-2xl mb-3">Enter Your Withdraw Value</p>
+                <p class="text-2xl mb-3">Withdraw Value</p>
                 <div class="text-left mt-8">
-                    <input id="withdrawValue" class="rounded-lg p-3 mb-5" type="number" placeholder="Enter Your Amount">
+                    <input id="withdrawValue" class="rounded-lg p-3 mb-5 lg:w-2/3 w-full" type="number"
+                        placeholder="Enter Your Amount">
                     <br>
                     <button id="withdraw" class="bg-red-500 py-4 px-6 rounded-full text-white">Withdraw</button>
                 </div>
@@ -67,6 +69,7 @@
 
 
     <script src="deposit.js"></script>
+    <script src="withdraw.js"></script>
 </body>
 
 </html>
